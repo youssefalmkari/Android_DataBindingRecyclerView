@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
-        android:fullBackupContent="@xml/backup_descriptor"></application>
+        android:fullBackupContent="@xml/backup_descriptor">
+
+        <activity android:name=".MainActivity" />
+
+    </application>
 
 </manifest>
