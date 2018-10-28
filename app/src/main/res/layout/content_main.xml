@@ -14,7 +14,7 @@
 
         <variable
             name="handlers"
-            type="space.personal.youssefalmkari.databindingrecyclerview.MainActivity" />
+            type="space.personal.youssefalmkari.databindingrecyclerview.view.MainActivity.MyClickHandlers" />
 
     </data>
 
