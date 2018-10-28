@@ -29,7 +29,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         }
     }
 
-    public PostAdapter(List<Post> postList, LayoutInflater layoutInflater) {
+    PostAdapter(List<Post> postList, LayoutInflater layoutInflater) {
         this.postList = postList;
         this.layoutInflater = layoutInflater;
     }

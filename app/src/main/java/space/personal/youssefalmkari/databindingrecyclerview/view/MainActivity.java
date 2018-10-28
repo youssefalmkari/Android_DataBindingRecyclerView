@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements PostAdapter.Posts
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         Toolbar toolbar = binding.toolbar;
@@ -66,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements PostAdapter.Posts
      * Renders user profile data
      */
     private void renderProfile() {
+
         user = new User();
         user.setName("David Attenborough");
         user.setEmail("david@natgeo.com");
@@ -78,12 +78,12 @@ public class MainActivity extends AppCompatActivity implements PostAdapter.Posts
         user.getNumberOfFollowers().set(3050890L);
         user.getNumberOfFollowing().set(150L);
 
-
         // display user
         binding.setUser(user);
 
         // assign click handlers
         binding.content.setHandlers(handlers);
+
     }
 
     private ArrayList<Post> getPosts() {
@@ -117,8 +117,8 @@ public class MainActivity extends AppCompatActivity implements PostAdapter.Posts
          * will be updated on Fab click
          */
         public void onProfileFabClicked(View view) {
-            user.setName("Sir David Attenborough");
-            user.setProfileImage("https://api.androidhive.info/images/nature/david1.jpg");
+            user.setName("Kakarot");
+            user.setProfileImage(getResources().getString(R.string.goku_profile_address));
 
             // updating ObservableField
             user.getNumberOfPosts().set(5500L);
@@ -127,7 +127,9 @@ public class MainActivity extends AppCompatActivity implements PostAdapter.Posts
         }
 
         public boolean onProfileImageLongPressed(View view) {
-            Toast.makeText(getApplicationContext(), "Profile image long pressed!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),
+                    "Profile image long pressed!",
+                    Toast.LENGTH_LONG).show();
             return false;
         }
 

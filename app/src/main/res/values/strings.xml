@@ -5,4 +5,7 @@
     <string name="posts">POSTS</string>
     <string name="followers">FOLLOWERS</string>
     <string name="following">FOLLOWING</string>
+    <string name="goku_profile_address">
+        https://vignette.wikia.nocookie.net/awesome-factbase/images/f/fd/Character_Profile_-_Son_Goku.jpeg
+    </string>
 </resources>
