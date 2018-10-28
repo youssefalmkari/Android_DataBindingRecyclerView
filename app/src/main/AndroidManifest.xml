@@ -15,8 +15,6 @@
         tools:ignore="GoogleAppIndexingWarning"
         android:fullBackupContent="@xml/backup_descriptor">
 
-        <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>
